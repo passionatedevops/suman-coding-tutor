@@ -327,12 +327,6 @@ footer {
   gap: 1rem;
   margin-bottom: 0;
 }
-/* Hide verbose sections in compact footer */
-.footer-brand p,
-.footer-links h4,
-.footer-contact h4,
-.footer-contact-item svg { display: none; }
-
 .footer-brand .nav-brand { font-size: 1.1rem; margin-bottom: 0; }
 .footer-links ul {
   display: flex;
