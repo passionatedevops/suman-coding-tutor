@@ -3,12 +3,12 @@
 // ================================================
 
 // Load shared footer
-fetch('footer.html')
-  .then(res => res.text())
-  .then(html => {
-    const placeholder = document.getElementById('footer-placeholder');
-    if (placeholder) placeholder.outerHTML = html;
-  });
+// fetch('footer.html')
+//   .then(res => res.text())
+//   .then(html => {
+//     const placeholder = document.getElementById('footer-placeholder');
+//     if (placeholder) placeholder.outerHTML = html;
+//   });
 
 // Hamburger menu toggle
 document.addEventListener('DOMContentLoaded', () => {
