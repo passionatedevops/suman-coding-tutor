@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found – Suman Coding Tutor | Melbourne</title>
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Suman <span>&lt;/&gt;</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="nav-cta">BOOK A FREE CONSULTATION</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">BOOK A FREE CONSULTATION</a>
+    </div>
+  </nav>
+
+  <!-- ===== 404 CONTENT ===== -->
+  <section class="section" style="min-height: 80vh; display: flex; align-items: center;">
+    <div class="container">
+      <div class="error-inner">
+        <span class="section-label">Error 404</span>
+        <div class="error-code">
+          <span class="code-comment">// page not found</span>
+          <h1>404</h1>
+        </div>
+        <p class="error-msg">
+          Looks like this page doesn't exist — or it moved.<br />
+          Let's get you back on track.
+        </p>
+        <div class="hero-btns">
+          <a href="index.html" class="btn btn-primary">Go to Home</a>
+          <a href="services.html" class="btn btn-outline">View Services</a>
+          <a href="contact.html" class="btn btn-outline">Book a Session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="main.js"></script>
+
+  <style>
+    .error-inner {
+      max-width: 560px;
+    }
+    .error-code {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 1rem 0 1.5rem;
+    }
+    .code-comment {
+      font-family: var(--font-code);
+      font-size: 1rem;
+      color: var(--blue);
+      opacity: 0.7;
+    }
+    .error-inner h1 {
+      font-size: clamp(5rem, 18vw, 10rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -4px;
+      color: var(--white);
+    }
+    .error-msg {
+      color: var(--grey);
+      font-size: 1.05rem;
+      line-height: 1.75;
+      margin-bottom: 2rem;
+    }
+  </style>
+
+</body>
+</html>
