@@ -13,22 +13,22 @@
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar">
     <div class="nav-inner">
-      <a href="index.html" class="nav-brand">Suman <span>&lt;/&gt;</span></a>
+      <a href="/" class="nav-brand">Suman <span>&lt;/&gt;</span></a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html" class="nav-cta">BOOK A FREE CONSULTATION</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/programming.html">Programming</a></li>
+        <li><a href="/math.html">Math</a></li>
+        <li><a href="/contact.html" class="nav-cta">BOOK A FREE CONSULTATION</a></li>
       </ul>
       <button class="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="mobile-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">BOOK A FREE CONSULTATION</a>
+      <a href="/">Home</a>
+      <a href="/programming.html">Programming</a>
+      <a href="/math.html">Math</a>
+      <a href="/contact.html">BOOK A FREE CONSULTATION</a>
     </div>
   </nav>
 
@@ -50,7 +50,7 @@
         <div class="form-side">
           <span class="section-label">Booking Request</span>
           <h2 class="section-title" style="font-size:1.8rem;">Tell me about <span>your situation</span></h2>
-          <p style="color:var(--grey); font-size:0.92rem; margin-bottom:2rem;">Fill in the form below. I'll respond within 2 hours during business hours. No spam, no hard sell ,just a conversation.</p>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:2rem;">Fill in the form below. I'll respond within 2 hours during business hours. No spam, no hard sell ,just a conversation.</p>
 
           <!--
             HOW TO ACTIVATE THE FORM:
@@ -99,15 +99,22 @@
               <label for="subject">Language / Subject *</label>
               <select id="subject" name="subject" required>
                 <option value="" disabled selected>What do you need help with?</option>
-                <option value="python">Python</option>
-                <option value="java">Java</option>
-                <option value="c-cpp">C / C++</option>
-                <option value="csharp">C# / .NET</option>
-                <option value="javascript">JavaScript</option>
-                <option value="html-css">HTML &amp; CSS</option>
-                <option value="sql">SQL / Databases</option>
-                <option value="ruby">Ruby </option>
-                <option value="general">General Programming / Logic</option>
+                <optgroup label="Programming">
+                  <option value="python">Python</option>
+                  <option value="java">Java</option>
+                  <option value="c-cpp">C / C++</option>
+                  <option value="csharp">C# / .NET</option>
+                  <option value="javascript">JavaScript</option>
+                  <option value="html-css">HTML &amp; CSS</option>
+                  <option value="sql">SQL / Databases</option>
+                  <option value="ruby">Ruby </option>
+                  <option value="general">General Programming / Logic</option>
+                </optgroup>
+                <optgroup label="Math">
+                  <option value="math-year7">Maths ,Year 7</option>
+                  <option value="math-year8">Maths ,Year 8</option>
+                  <option value="math-year9">Maths ,Year 9</option>
+                </optgroup>
                 <option value="other">Other / Not Sure</option>
               </select>
             </div>
@@ -136,7 +143,7 @@
             <!-- Honeypot anti-spam field (hidden from humans) -->
             <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
             <!-- Redirect after submission (optional) -->
-            <input type="hidden" name="_next" value="thanks.html" />
+            <input type="hidden" name="_next" value="https://sumanteaches.com/thanks.html" />
 
             <button type="submit" class="btn btn-primary submit-btn">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
@@ -178,16 +185,18 @@
             </div>
             <div>
               <h4>Email</h4>
-              <a href="mailto:connectnow.world@gmail.com" style="color:var(--grey); font-size:0.9rem;">connectnow.world@gmail.com</a>
+              <a href="mailto:connectnow.world@gmail.com" style="color:var(--text-muted); font-size:0.9rem;">connectnow.world@gmail.com</a>
             </div>
           </div>
 
           <!-- Superprof -->
           <div class="contact-option">
-            <div class="contact-option-icon">🌐</div>
+            <div class="contact-option-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
             <div>
               <h4>Superprof Profile</h4>
-              <a href="https://www.superprof.com.au/senior-software-engineer-coding-mentor-hsc-uni-career-prep-python-java-sql-more-yrs-industry-experience.html" target="_blank" rel="noopener" style="color:var(--grey); font-size:0.88rem; line-height:1.5;">71 verified reviews ,view on Superprof →</a>
+              <a href="https://www.superprof.com.au/senior-software-engineer-coding-mentor-hsc-uni-career-prep-python-java-sql-more-yrs-industry-experience.html" target="_blank" rel="noopener" style="color:var(--text-muted); font-size:0.88rem; line-height:1.5;">70+ verified reviews ,view on Superprof →</a>
             </div>
           </div>
 
@@ -216,7 +225,7 @@
 
           <!-- Review snippet -->
           <div class="mini-review">
-            <div class="review-stars" style="color:#FFB800; font-size:0.9rem; letter-spacing:2px;">★★★★★</div>
+            <div class="review-stars" style="color:var(--accent-current); font-size:0.9rem; letter-spacing:2px;">★★★★★</div>
             <p>"Suman replies very fast and is extremely reliable. He helped me out greatly on short notice."</p>
             <span>Eliza</span>
           </div>
@@ -245,7 +254,7 @@
     .form-group label {
       font-size: 0.82rem;
       font-weight: 600;
-      color: var(--grey);
+      color: var(--text-muted);
       text-transform: uppercase;
       letter-spacing: 0.5px;
       font-family: var(--font-code);
@@ -256,7 +265,7 @@
       background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: 8px;
-      color: var(--white);
+      color: var(--text-light);
       font-family: var(--font-head);
       font-size: 0.95rem;
       padding: 0.75rem 1rem;
@@ -266,24 +275,25 @@
       -webkit-appearance: none;
     }
     .form-group select {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238899BB' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23898EA0' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: right 0.75rem center;
       padding-right: 2.5rem;
       cursor: pointer;
     }
     .form-group input::placeholder,
-    .form-group textarea::placeholder { color: #445577; }
+    .form-group textarea::placeholder { color: var(--placeholder); }
     .form-group input:focus,
     .form-group select:focus,
     .form-group textarea:focus {
-      border-color: var(--blue);
-      box-shadow: 0 0 0 3px var(--blue-glow);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
     }
     .form-group textarea { resize: vertical; min-height: 120px; }
-    .form-group select option { background: var(--navy-mid); color: var(--white); }
+    .form-group select option { background: var(--surface-1); color: var(--text-light); }
+    .form-group select optgroup { background: var(--surface-1); color: var(--accent); font-family: var(--font-code); }
     .submit-btn { width: 100%; justify-content: center; font-size: 1rem; padding: 1rem; margin-top: 0.5rem; }
-    .form-note { text-align: center; font-size: 0.8rem; color: var(--grey); font-family: var(--font-code); }
+    .form-note { text-align: center; font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-code); }
 
     /* Info side */
     .info-side { display: flex; flex-direction: column; gap: 1.25rem; }
@@ -297,20 +307,17 @@
       padding: 1.25rem;
       transition: border-color var(--transition);
     }
-    .contact-option:hover { border-color: var(--blue-dim); }
+    .contact-option:hover { border-color: var(--accent-dim); }
     .contact-option-icon {
-      color: var(--blue);
+      color: var(--accent);
       flex-shrink: 0;
       margin-top: 2px;
-      font-size: 1.3rem;
       display: flex;
       align-items: center;
     }
     .contact-option h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.25rem; }
-    .contact-option p { color: var(--grey); font-size: 0.88rem; }
-    .whatsapp-box { border-color: rgba(0, 200, 100, 0.3); }
-    .whatsapp-box .contact-option-icon { color: #25D366; }
-    .whatsapp-box:hover { border-color: rgba(0, 200, 100, 0.6); }
+    .contact-option p { color: var(--text-muted); font-size: 0.88rem; }
+    .whatsapp-box:hover { border-color: var(--accent-dim); }
 
     .trust-block {
       background: var(--card-bg);
@@ -323,22 +330,22 @@
       font-size: 0.78rem;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: var(--blue);
+      color: var(--accent);
       margin-bottom: 1rem;
     }
     .trust-steps { display: flex; flex-direction: column; gap: 0.75rem; }
     .trust-step { display: flex; align-items: center; gap: 0.75rem; }
     .trust-num {
       width: 24px; height: 24px;
-      background: var(--blue);
-      color: var(--navy);
+      background: var(--accent);
+      color: var(--bg-dark);
       border-radius: 50%;
       font-size: 0.72rem;
       font-weight: 700;
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
     }
-    .trust-step p { color: var(--grey); font-size: 0.88rem; }
+    .trust-step p { color: var(--text-muted); font-size: 0.88rem; }
 
     .mini-review {
       background: var(--card-bg);
@@ -347,13 +354,13 @@
       padding: 1.25rem;
     }
     .mini-review p {
-      color: var(--grey);
+      color: var(--text-muted);
       font-size: 0.88rem;
       font-style: italic;
       line-height: 1.65;
       margin: 0.5rem 0;
     }
-    .mini-review span { font-family: var(--font-code); font-size: 0.78rem; color: var(--blue); }
+    .mini-review span { font-family: var(--font-code); font-size: 0.78rem; color: var(--accent); }
 
     @media (max-width: 900px) {
       .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }

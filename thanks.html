@@ -11,35 +11,38 @@
 
   <nav class="navbar">
     <div class="nav-inner">
-      <a href="index.html" class="nav-brand">Suman <span>&lt;/&gt;</span></a>
+      <a href="/" class="nav-brand">Suman <span>&lt;/&gt;</span></a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html" class="nav-cta">BOOK A FREE CONSULTATION</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/programming.html">Programming</a></li>
+        <li><a href="/math.html">Math</a></li>
+        <li><a href="/contact.html" class="nav-cta">BOOK A FREE CONSULTATION</a></li>
       </ul>
       <button class="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="mobile-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">BOOK A FREE CONSULTATION</a>
+      <a href="/">Home</a>
+      <a href="/programming.html">Programming</a>
+      <a href="/math.html">Math</a>
+      <a href="/contact.html">BOOK A FREE CONSULTATION</a>
     </div>
   </nav>
 
   <section class="section" style="min-height:80vh; display:flex; align-items:center;">
     <div class="container">
       <div class="thanks-box animate-up">
-        <div class="thanks-icon">✅</div>
+        <div class="thanks-icon icon">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
         <h1>Booking Request Sent!</h1>
         <p>Thanks for reaching out. I'll get back to you within 2 hours during business hours.</p>
-        <p style="margin-top:0.5rem;">In the meantime, feel free to browse the <a href="services.html">services page</a> to understand what our first session might look like.</p>
+        <p style="margin-top:0.5rem;">In the meantime, feel free to browse the <a href="/programming.html">programming</a> and <a href="/math.html">math</a> pages to understand what our first session might look like.</p>
         <div class="thanks-btns">
-          <a href="index.html" class="btn btn-primary">Back to Home</a>
-          <a href="services.html" class="btn btn-outline">View Services</a>
+          <a href="/" class="btn btn-primary">Back to Home</a>
+          <a href="/programming.html" class="btn btn-outline">Programming</a>
+          <a href="/math.html" class="btn btn-outline">Math</a>
         </div>
       </div>
     </div>
@@ -55,9 +58,9 @@
       margin: 0 auto;
       text-align: center;
     }
-    .thanks-icon { font-size: 4rem; margin-bottom: 1.5rem; }
+    .thanks-icon { justify-content: center; margin-bottom: 1.5rem; }
     .thanks-box h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 900; margin-bottom: 1rem; }
-    .thanks-box p { color: var(--grey); font-size: 1rem; line-height: 1.75; }
+    .thanks-box p { color: var(--text-muted); font-size: 1rem; line-height: 1.75; }
     .thanks-btns { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2rem; }
   </style>
 

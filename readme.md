@@ -9,18 +9,26 @@ No build tools, no frameworks, no server required — plain files hosted as a st
 
 ## File Structure
 
+The site is four pages. Nothing else should be added to the navigation.
+
 ```
 suman-coding-tutor/
-├── index.html          # Home page
-├── about.html          # About page
-├── services.html       # Services & pricing page
+├── index.html          # Home (includes credentials / "Meet your tutor" + teaching philosophy)
+├── programming.html    # Programming & coding tutoring + pricing
+├── math.html           # Math tutoring + pricing
 ├── contact.html        # Contact / booking form page
-├── thanks.html         # Form submission thank-you page
+├── thanks.html         # Form submission thank-you page (not in nav)
+├── 404.html            # Not-found page (not in nav)
 ├── footer.html         # Shared footer partial (loaded via JS)
 ├── style.css           # All site styles
 ├── main.js             # Shared JS (hamburger menu, active nav, footer loader)
+├── sitemap.xml         # Search engine sitemap
+├── robots.txt          # Crawler rules
 └── readme.md           # This file
 ```
+
+**Navigation (identical on every page, no dropdowns):**
+Home · Programming · Math · Book a Free Consultation
 
 ---
 
@@ -47,15 +55,20 @@ To **update the footer** (links, contact info, copyright year):
 - Also check `contact.html` if there is a contact section with duplicated details.
 
 ### Update Pricing / Services
-- Edit `services.html` — all pricing cards and package details are in that file.
+- Edit the pricing strip near the top of `programming.html` and `math.html` — the hourly rate appears in both files, so update both.
+- The rate is also declared in the JSON-LD `<script type="application/ld+json">` block in the `<head>` of `index.html`, `programming.html`, and `math.html`. Keep those in sync with the visible price.
+
+### Update Credentials / About Content
+- The "Meet your tutor" bio and credential cards live in `index.html` (there is no separate about page).
 
 ### Update the Copyright Year
 - Edit the `<p>` tag inside `.footer-bottom` in `footer.html`.
 
 ### Add a New Page
-1. Create a new `.html` file by copying an existing page (e.g. `about.html`) as a template.
+1. Create a new `.html` file by copying an existing page (e.g. `programming.html`) as a template.
 2. Keep the `<head>`, `<nav>`, mobile nav, and footer placeholder consistent.
-3. Link to it from the nav in all existing pages.
+3. Add it to `sitemap.xml`.
+4. Prefer linking to it from within an existing page rather than the nav — the nav is deliberately kept to four items.
 
 ---
 
