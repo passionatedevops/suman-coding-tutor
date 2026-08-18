@@ -192,6 +192,52 @@
     </div>
   </section>
 
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section">
+    <div class="container">
+      <span class="section-label">What Students Say</span>
+      <h2 class="section-title">Real Reviews From <span>Real Students</span></h2>
+      <div class="grid-2 stagger">
+
+        <div class="testimonial-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Suman is very trustworthy and an excellent teacher. He explains concepts clearly and patiently, making difficult topics easy to understand. He takes the time to make sure I really understand the logic behind the code instead of just memorising it. I've gained a lot of confidence and skill since learning with him, and I truly appreciate his dedication and professionalism."</p>
+          <p class="review-author">Julia — Superprof review</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Suman was very patient and helpful. He helped me to run my code using a docker and explained the syntax of what I was writing when I was getting confused. He was also very prompt in responding and set up a call the same day. He also had a deep understanding of the subject."</p>
+          <p class="review-author">Nicole — Superprof review</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Suman is truly incredible! Suman is so kind and understanding. His knowledge is truly incredible. He goes above and beyond to help you learn and understand all aspects of Artificial Intelligence. As someone with no previous experience Suman has been the most incredible tutor. This man is a legend! I highly recommend Suman!!!"</p>
+          <p class="review-author">Anna — Superprof review</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Suman did a great job with helping and assisting me towards a great outcome. Suman was very accommodating and great to work with. He was always available and communicated and responded very quickly. For anyone needing assistance I highly recommend him."</p>
+          <p class="review-author">Matthew — Superprof review</p>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:2rem;">
+        <a href="https://www.superprof.com.au/senior-software-engineer-coding-mentor-hsc-uni-career-prep-python-java-sql-more-yrs-industry-experience.html" target="_blank" rel="noopener" class="testimonials-link">Read all 70+ reviews on Superprof →</a>
+      </div>
+
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="/contact.html" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+          BOOK A FREE CONSULTATION
+        </a>
+      </div>
+    </div>
+  </section>
+
   <div id="footer-placeholder"></div>
 
   <script src="main.js"></script>
@@ -291,6 +337,21 @@
     }
     .subject-card h3 { font-size: 1.3rem; font-weight: 800; }
     .subject-card p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.65; flex: 1; margin-bottom: 0.5rem; }
+
+    /* ---- Testimonials ---- */
+    .testimonial-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .testimonial-card .review-stars { color: var(--accent-current); font-size: 0.95rem; letter-spacing: 2px; }
+    .testimonial-card .review-text { color: var(--text-muted); font-size: 0.92rem; line-height: 1.7; font-style: italic; }
+    .testimonial-card .review-author { font-family: var(--font-code); font-size: 0.8rem; color: var(--accent-current); }
+    .testimonials-link { font-size: 0.9rem; font-weight: 600; }
 
     /* Mobile adjustments */
     @media (max-width: 640px) {
